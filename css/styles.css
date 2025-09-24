@@ -1,19 +1,93 @@
 /* * {
-  outline: red solid 1px;
+  outline: red 1px solid;
 } */
 
-header {
+p,
+a {
+  font-weight: 600;
+  font-family: Satoshi, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+body.body-color {
   background-color: #21548b;
 }
-.header {
-  color: transparent;
-  font-size: 50px;
-  letter-spacing: 15px;
-  -webkit-text-stroke: 2px #bd6a41;
-  text-transform: uppercase;
-  font-weight: 800;
+
+/* section {
+  scroll-margin-top: 70px;
+} */
+
+nav#navbar {
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  background-color: #21548b;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#navbar.scrolled {
+  background-color: rgba(33, 84, 139, 0.1);
 }
 
 .touch {
+  padding: 2px 14px 2px 14px;
   background-color: orange;
 }
+
+header {
+  height: 100vh;
+  position: relative;
+  background-color: #21548b;
+}
+
+.repeat-header {
+  padding: auto;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-family: Chillax, sans-serif;
+}
+
+h1:first-child {
+  margin-top: 5rem;
+  color: white;
+  font-size: 12vw;
+  font-weight: 800;
+}
+
+.repeat-header .repeat-h1 {
+  color: #21548b;
+  -webkit-text-stroke: 4px #bd6a41;
+  paint-order: stroke;
+  font-size: 12vw;
+  font-weight: 800;
+}
+
+#about {
+  height: 1000px;
+  background-color: #ededed;
+}
+#resume {
+  height: 1000px;
+  background-color: orange;
+}
+#projects {
+  height: 1000px;
+  background-color: #21548b;
+}
+
+/* .contact-info {
+  outline: rgba(255, 255, 255, 0.3) 1px solid;
+  align-content: center;
+  padding: 1rem;
+  width: 300px;
+  height: 180px;
+  color: white;
+  position: absolute;
+  background-color: #21548b;
+  z-index: 100;
+  inset: 0;
+  transform: translate(200%, 100%);
+} */
