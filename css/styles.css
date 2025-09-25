@@ -1,39 +1,100 @@
-/* * {
-  outline: red 1px solid;
-} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-p,
-a {
-  font-weight: 600;
-  font-family: Satoshi, sans-serif;
+* {
+  margin: 0;
+  /* line-height: calc(1em + 0.5rem); */
 }
 
 body {
-  height: 100vh;
+  line-height: 1.5;
+  /* min-height: 100vh; */
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+p {
+  font-family: Satoshi, sans-serif;
+  font-size: 1rem;
+}
+
+a,
+a.nav-link {
+  text-shadow: 0.05rem 0.05rem rgba(0, 0, 0, 0.5);
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: Satoshi, sans-serif;
 }
 
 body.body-color {
   background-color: #21548b;
 }
 
-/* section {
-  scroll-margin-top: 70px;
-} */
-
 nav#navbar {
   -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(10px);
-  background-color: #21548b;
+  backdrop-filter: blur(15px);
   outline: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background-color 0.2s ease-in-out;
-}
-
-#navbar.scrolled {
-  background-color: rgba(33, 84, 139, 0.1);
+  background-color: rgba(33, 84, 139, 0.5);
 }
 
 .touch {
-  padding: 2px 14px 2px 14px;
+  padding: 0rem 1.5rem;
   background-color: orange;
 }
 
@@ -51,7 +112,6 @@ header {
 }
 
 h1:first-child {
-  margin-top: 5rem;
   color: white;
   font-size: 12vw;
   font-weight: 800;
@@ -66,6 +126,8 @@ h1:first-child {
 }
 
 #about {
+  /* max-inline-size: 800px;
+  margin-inline: auto; */
   height: 1000px;
   background-color: #ededed;
 }
