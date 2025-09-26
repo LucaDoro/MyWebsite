@@ -119,37 +119,40 @@ h1:first-child {
 
 .repeat-header .repeat-h1 {
   color: #21548b;
-  -webkit-text-stroke: 4px #bd6a41;
+  -webkit-text-stroke: 6px #bd6a41;
   paint-order: stroke;
   font-size: 12vw;
   font-weight: 800;
 }
 
 #about {
-  /* max-inline-size: 800px;
-  margin-inline: auto; */
   height: 1000px;
   background-color: #ededed;
 }
-#resume {
-  height: 1000px;
-  background-color: orange;
+
+.about-box {
+  outline: rgba(255, 255, 255, 0.2);
 }
-#projects {
+
+.profile-picture {
+  /* width: 300px; */
+  /* max-width: 500px; */
+}
+
+.contact-box {
+}
+
+#resume {
+  color: white;
   height: 1000px;
   background-color: #21548b;
 }
 
-/* .contact-info {
-  outline: rgba(255, 255, 255, 0.3) 1px solid;
-  align-content: center;
-  padding: 1rem;
-  width: 300px;
-  height: 180px;
-  color: white;
-  position: absolute;
-  background-color: #21548b;
-  z-index: 100;
-  inset: 0;
-  transform: translate(200%, 100%);
-} */
+.resume-box {
+  outline: rgba(255, 255, 255, 0.2);
+}
+
+#projects {
+  height: 1000px;
+  background-color: #ededed;
+}
